@@ -1,0 +1,14 @@
+code = input()
+min_count = int(input())
+cur_count = 0
+
+for i in code:
+    if i != '*':
+        cur_count += 1
+
+if cur_count < min_count:
+    print('Код слишком короткий!')
+    print('Число символов в коде до * =', cur_count)
+else:
+    print('Код подходит!')
+    print('Число символов в коде до * =', cur_count)
