@@ -1,0 +1,9 @@
+number = input()
+digit = input()
+count = 0
+
+for i in number:
+    if i == digit:
+        count += 1
+
+print('В строке', number, 'цифр', digit, ':', count)
