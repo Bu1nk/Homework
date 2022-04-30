@@ -1,0 +1,23 @@
+number_1 = '213134'
+number_2 = '333322'
+number_3 = '312356'
+summ_1 = 0
+summ_2 = 0 
+summ_3 = 0
+
+for i in number_1:
+    summ_1 += int(i)
+
+print('Сумма цифр первого числа', summ_1)
+
+for i in number_2:
+    summ_2 += int(i)
+
+print('Сумма цифр первого числа', summ_2)
+
+for i in number_3:
+    summ_3 += int(i)
+
+print('Сумма цифр первого числа', summ_3)
+
+print('Число с максимальной суммой цифр:', max(summ_1, summ_2, summ_3))
