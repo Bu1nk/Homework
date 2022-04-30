@@ -1,0 +1,9 @@
+N = int(input())
+factorial = 1
+summ_factorial = 0
+
+for i in range(1, N+1):
+    factorial *= i
+    summ_factorial += factorial
+
+print('Сумма факториалов для числа', N, '=', summ_factorial)
