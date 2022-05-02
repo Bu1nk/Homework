@@ -1,0 +1,13 @@
+row = input()
+count = 0
+max_el = 0
+
+for i in range(len(row)):
+    if row[i] == ' ' or i == (len(row) - 1):
+        if count > max_el:
+            max_el = count
+        count = 0
+    elif row[i] != ' ':
+        count +=1
+
+print('Наибольшее количество символов в слове:', max_el)
