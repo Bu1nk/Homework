@@ -1,0 +1,13 @@
+count = 0
+min_el = 100000
+
+for element in range(10000, 100000):
+    element = str(element)
+    if ('3' in element) == True and (element[3:] == '14' or element[3:] == '29'):
+        count += 1
+        element = int(element)
+        if element < min_el:
+            min_el = element
+
+print('Количество чисел, подходящих по условию:', count)
+print('Наименьшее из них:', min_el)
