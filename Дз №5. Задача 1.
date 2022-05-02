@@ -1,0 +1,13 @@
+line = input()
+count = 0
+
+if '1' in line:
+    line = line.replace('1', 'один')
+    count += line.count('один')
+
+if '5' in line:
+    line = line.replace('5', 'пять')
+    count += line.count('пять')
+    
+print(line)
+print('Количество замен:', count)
