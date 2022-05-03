@@ -1,0 +1,4 @@
+line = input()
+count_Gg = line.count('GEEKZ') + line.count('geekz')
+
+print(count_Gg)
