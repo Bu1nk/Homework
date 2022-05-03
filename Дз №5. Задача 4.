@@ -1,0 +1,17 @@
+line = input()
+count = 0
+vowels = 'уеыаоэяиюёЁУЕЫАОЭЯИЮ'
+max_vowels = 0
+
+for letter in range(len(line)):
+    if (line[letter] in vowels) and (letter == (len(line) - 1)):
+        count += 1
+        max_vowels = max(count, max_vowels)
+        count = 0
+    elif (line[letter] == ' ') or (letter == (len(line) - 1)):
+        max_vowels = max(count, max_vowels)
+        count = 0
+    elif line[letter] in vowels:
+        count += 1
+
+print(max_vowels)
