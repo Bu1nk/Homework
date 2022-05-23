@@ -1,0 +1,6 @@
+line = input().split()
+
+for word in line:
+    for letter in word:
+        print(letter, end = '.')
+    print()
