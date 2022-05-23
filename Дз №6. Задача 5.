@@ -1,0 +1,10 @@
+days = int(input())
+workout = ['кардио', 'силовая', 'йога']
+
+for i in range(1, days+1):
+    if i % 3 == 1:
+        print(i, '-', workout[0])
+    elif i % 3 == 2:
+        print(i, '-', workout[1])
+    elif i % 3 == 0:
+        print(i, '-', workout[2])
