@@ -1,0 +1,15 @@
+row = input()
+count = 0
+max_i = 0
+
+for i in range(len(row)):
+    if row[i] == ' ':
+        max_i = max(max_i, count)
+        count = 0
+    elif (i == len(row) - 1):
+        max_i = max(max_i, count + 1)
+        count = 0
+    elif row[i] != ' ':
+        count += 1
+
+print(max_i)
