@@ -1,0 +1,16 @@
+numbers = input().split()
+summ_numbers = 0
+pr_numbers = 1
+
+for i in range(len(numbers)):
+    number = int(numbers[i])
+    if number % 2 == 0:
+        numbers[i] = number * 2 + 1
+    number = int(numbers[i])
+    summ_numbers += number
+    pr_numbers *= number
+
+print(numbers)
+print(summ_numbers//len(numbers))
+print(summ_numbers)
+print(pr_numbers)
