@@ -1,0 +1,21 @@
+#numbers = [
+#92, 16, 94, 61, 38,
+#52, 52, 59, 35, 96,
+#43, 69, 70, 54, 64,
+#13, 18, 99, 99, 72,
+#11, 29, 26, 81, 76,
+#]
+numbers = list(map(int,(input().split())))
+count = 0
+max_pr = 0
+curr_pr = 1
+
+for i in range(len(numbers)-2+1):
+    pair = numbers[i:i+2]
+    if sum(pair) % 7 == 0 or sum(pair) % 10 == 0:
+        count += 1
+        curr_pr = pair[0] * pair[1]
+        max_pr = max(curr_pr, max_pr)
+        print(*pair)
+
+print(count, max_pr)
