@@ -1,0 +1,32 @@
+line = 'cacbabbbacbbbbbaaccbaaacc'
+
+#1
+#v1
+print(line.count('acb'))
+#v2
+count = 0
+
+for i in range(len(line)-3+1):
+    word = line[i:i+3]
+    if word == 'acb':
+        count += 1
+
+print(count)
+#2
+count = 0
+
+for i in range(len(line)-2+1):
+    word = line[i:i+2]
+    if word[0] == word[1]:
+        count += 1
+
+print(count)
+#3
+count = 0
+
+for i in range(len(line)-3+1):
+    word = line[i:i+3]
+    if word[0] == word[2]:
+        count += 1
+
+print(count)
