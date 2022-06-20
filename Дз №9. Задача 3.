@@ -1,0 +1,8 @@
+count = 0
+numbers = []
+for number in range(225, 2225+1):
+    if (number%3 == 0) and (number%6 == 0) and (number%9 != 0) and len(str(number))==len(set(str(number))):
+        count += 1
+        numbers.append(number)
+
+print(count, max(numbers)*min(numbers))
