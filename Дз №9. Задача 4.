@@ -1,0 +1,23 @@
+data = '1231LK3J1LsfsK12L4KDLsdfKD1L2K312L3K12J5D1LK3J1sdf2D'
+digits=[] 
+letters=[] 
+
+for el in data:
+    if el in "0123456789":
+        digits.append(el)
+    else:
+        letters.append(el)
+sum=0 
+for i in range(len(digits)): 
+    digits[i]= int(digits[i]) 
+    sum+=digits[i]
+    
+print(sum,len(digits), sum/len(digits)) 
+
+letters =sorted(letters) 
+stroke = ''
+
+for letter in letters:
+    stroke+=letter
+    
+print(stroke)
