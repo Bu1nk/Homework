@@ -1,0 +1,13 @@
+text ='ABAACACBACABCBCBACBACCBACCAAAABCABAAAABBCAB'
+cur_len = 0
+max_len = 0
+
+for i in range(len(text)):
+    if text[i] == 'A' or text[i] == 'B':
+        cur_len += 1
+    else:
+        if cur_len > max_len:
+            max_len = cur_len
+        cur_len = 0
+
+print(max_len)
