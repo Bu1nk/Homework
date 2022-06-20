@@ -1,0 +1,18 @@
+numbers = [
+912, 16, 94, 611, 38,
+52, 532, 59, 35, 96,
+43, 69, 70, 544, 64,
+13, 18, 924, 99, 72,
+11, 29, 13, 81, 76,
+43, 69, 70, 54, 64,
+13, 18, 134, 99, 72,
+11, 29, 13, 81, 76,
+]
+count = 0 
+
+for i in range(len(numbers)-4+1):
+    group = numbers[i:i+4]
+    if len(str(group[0]))==len(str(group[1]))==len(str(group[2]))==len(str(group[3])):
+        count += 1
+
+print(count)
