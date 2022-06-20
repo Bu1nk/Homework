@@ -1,0 +1,7 @@
+set_1 = '56 45 23 12 56'
+set_2 = '54 45 45 99 23'
+set_3 = '56 78 31 12 23'
+set1 = set(set_1.split())
+set2 = set(set_2.split())
+set3 = set(set_3.split())
+print(set1.union(set2, set3) - (set1 & set2 & set3))
