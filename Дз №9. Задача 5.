@@ -1,0 +1,11 @@
+text ='MNsrRSTmLMnNRrrTONRSmnTMmNRsSnLMNSTONRSTrsMNRSTLNSnmOMRSOL' 
+ui = text.lower( ) 
+line = [] 
+count=0 
+for i in ui:
+    line.append(i)
+for i in range(len(line)-4):
+    if len(set(line[i: i+5])) < 5:
+        print(text[i: i+5]) 
+        count+=1
+print(count)
