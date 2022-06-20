@@ -1,0 +1,9 @@
+text = 'ZXWZWXYZWXZYXWYZXWZYWXXYZWXYXWYYZXWYXZYWXWYY'
+count = 0
+
+for i in range(len(text)-4+1):
+    word = text[i:i+4]
+    if word == 'XWYY':
+        count += 1
+
+print(count)
